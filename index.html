@@ -1,26 +1,100 @@
 <!DOCTYPE html>
-<html>
+<html lang="zh-CN">
 <head>
     <meta charset="UTF-8">
-    <title>我的博客</title>
-    <link rel="stylesheet" href="styles.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>我的个人博客</title>
+    <style>
+        /* 基础样式 */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Arial, sans-serif;
+        }
+
+        body {
+            line-height: 1.6;
+            background: #f5f5f5;
+            color: #333;
+        }
+
+        /* 头部导航 */
+        .navbar {
+            background: #2c3e50;
+            padding: 1rem;
+            color: white;
+        }
+
+        .navbar a {
+            color: white;
+            text-decoration: none;
+            margin-right: 1.5rem;
+        }
+
+        /* 主体内容 */
+        .container {
+            max-width: 800px;
+            margin: 2rem auto;
+            padding: 0 1rem;
+        }
+
+        /* 文章列表 */
+        .post {
+            background: white;
+            padding: 2rem;
+            margin-bottom: 2rem;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+
+        .post h2 {
+            color: #2c3e50;
+            margin-bottom: 1rem;
+        }
+
+        .post-date {
+            color: #7f8c8d;
+            font-size: 0.9rem;
+        }
+
+        /* 页脚 */
+        footer {
+            text-align: center;
+            padding: 2rem;
+            background: #2c3e50;
+            color: white;
+        }
+    </style>
 </head>
 <body>
-    <header>
-        <h1>欢迎来到我的博客</h1>
-        <nav>
-            <a href="/">首页</a> | 
-            <a href="/about.html">关于</a>
-        </nav>
-    </header>
-    <main>
-        <article>
-            <h2>第一篇文章</h2>
-            <p>这是我的第一篇博客内容。</p>
-        </article>
-    </main>
+    <!-- 导航栏 -->
+    <nav class="navbar">
+        <a href="/">首页</a>
+        <a href="/about.html">关于</a>
+        <a href="/contact.html">联系</a>
+    </nav>
+
+    <!-- 博客内容 -->
+    <div class="container">
+        <!-- 文章1 -->
+        <div class="post">
+            <h2>我的第一篇文章</h2>
+            <p class="post-date">发布日期：2024年5月20日</p>
+            <p>这是我的第一篇博客文章，用来测试GitHub Pages的部署效果！这里可以写你的内容...</p>
+        </div>
+
+        <!-- 文章2 -->
+        <div class="post">
+            <h2>如何搭建个人博客</h2>
+            <p class="post-date">发布日期：2024年5月19日</p>
+            <p>只需要一个GitHub账号，就能免费创建自己的网站，非常简单...</p>
+        </div>
+    </div>
+
+    <!-- 页脚 -->
     <footer>
-        © 2025 我的博客
+        <p>© 2024 我的个人博客. 使用 GitHub Pages 构建</p>
     </footer>
 </body>
 </html>
